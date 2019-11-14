@@ -4,14 +4,23 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        // {
+        //     "name": "Launch",
+        //     "type": "cppvsdbg",
+        //     "request": "launch",
+        //     "program": "run.cmd",
+        //     "stopAtEntry": false,
+        //     "cwd": "${workspaceFolder}",
+        //     "environment": [],
+        //     "externalConsole": false
+        // },
         {
-            "name": "(Windows) Launch",
+            "name": "Debug",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "C:\\Users\\thunt\\.cargo\\bin\\cargo.exe",
-            "args": ["run","${relativeFile}","< input.txt"],
+            "program": "${workspaceRoot}/target/debug/advent_of_code_2018_rust.exe",
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceRoot}",
             "environment": [],
             "externalConsole": false
         }
